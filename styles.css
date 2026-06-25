@@ -377,6 +377,21 @@ body.menu-open .mobile-menu { transform: none; opacity: 1; pointer-events: auto;
   .nav-toggle { display: flex; }
   .nav .btn { display: none; }
 }
+
+/* ---------- Sticky Mobile CTA bar ---------- */
+.mobile-bar {
+  position: fixed; left: 0; right: 0; bottom: 0; z-index: 80;
+  display: none; gap: 10px; padding: 10px 14px calc(10px + env(safe-area-inset-bottom));
+  background: color-mix(in srgb, var(--cream) 92%, transparent);
+  backdrop-filter: blur(10px); border-top: 1px solid var(--line);
+  box-shadow: 0 -10px 30px -22px rgba(15,26,46,.6);
+}
+.mobile-bar .btn { flex: 1; padding: 13px 14px; font-size: 0.95rem; }
+@media (max-width: 760px) {
+  .mobile-bar { display: flex; }
+  body { padding-bottom: 76px; }
+  body.menu-open .mobile-bar { display: none; }
+}
 @media (max-width: 560px) {
   body { font-size: 16px; }
   .cards { grid-template-columns: 1fr; }
