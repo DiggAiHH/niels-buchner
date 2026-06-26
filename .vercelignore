@@ -1,0 +1,8 @@
+# Interne Strategie/Recherche – NICHT öffentlich deployen
+docs/
+assets/reference/
+README.md
+
+# Repo-/Tooling-Dateien
+.gitignore
+.git
