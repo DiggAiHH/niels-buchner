@@ -182,7 +182,7 @@ body.menu-open .mobile-menu { transform: none; opacity: 1; pointer-events: auto;
 /* ---------- Hero ---------- */
 .hero { padding-top: clamp(48px, 7vw, 96px); padding-bottom: clamp(56px, 8vw, 110px); overflow: hidden; }
 .hero-grid { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: clamp(36px, 6vw, 84px); align-items: center; }
-.hero h1 { margin: 22px 0 0; }
+.hero h1 { margin: 22px 0 0; font-size: clamp(2.2rem, 4.5vw, 3.7rem); line-height: 1.08; }
 .hero h1 .accent { color: var(--copper-deep); font-style: italic; }
 .hero .lead { margin-top: 26px; max-width: 33ch; }
 .hero-cta { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 34px; }
